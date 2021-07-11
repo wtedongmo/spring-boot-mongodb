@@ -1,13 +1,11 @@
-package guru.springframework.services;
+package com.twb.services;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.domain.Product;
+import com.twb.commands.ProductForm;
+import com.twb.domain.Product;
 
 import java.util.List;
 
-/**
- * Created by jt on 1/10/17.
- */
+
 public interface ProductService {
 
     List<Product> listAll();

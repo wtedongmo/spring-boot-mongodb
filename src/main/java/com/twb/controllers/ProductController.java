@@ -1,9 +1,9 @@
-package guru.springframework.controllers;
+package com.twb.controllers;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.converters.ProductToProductForm;
-import guru.springframework.domain.Product;
-import guru.springframework.services.ProductService;
+import com.twb.domain.Product;
+import com.twb.commands.ProductForm;
+import com.twb.converters.ProductToProductForm;
+import com.twb.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
-/**
- * Created by jt on 1/10/17.
- */
+
 @Controller
 public class ProductController {
     private ProductService productService;

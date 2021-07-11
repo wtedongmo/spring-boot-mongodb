@@ -1,23 +1,26 @@
-package guru.springframework.commands;
+package com.twb.domain;
 
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 
-/**
- * Created by jt on 1/10/17.
- */
-public class ProductForm {
-    private String id;
+
+@Document
+public class Product {
+    @Id
+    private ObjectId _id;
     private String description;
     private BigDecimal price;
     private String imageUrl;
 
-    public String getId() {
-        return id;
+    public ObjectId getId() {
+        return _id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId(ObjectId id) {
+        this._id = id;
     }
 
     public String getDescription() {

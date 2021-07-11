@@ -1,25 +1,23 @@
-package guru.springframework.services;
+package com.twb.services;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.converters.ProductFormToProduct;
-import guru.springframework.domain.Product;
-import guru.springframework.repositories.ProductRepository;
+import com.twb.commands.ProductForm;
+import com.twb.converters.ProductFormToProduct;
+import com.twb.domain.Product;
+import com.twb.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jt on 1/10/17.
- */
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
     private ProductFormToProduct productFormToProduct;
 
-    @Autowired
+//    @Autowired
     public ProductServiceImpl(ProductRepository productRepository, ProductFormToProduct productFormToProduct) {
         this.productRepository = productRepository;
         this.productFormToProduct = productFormToProduct;

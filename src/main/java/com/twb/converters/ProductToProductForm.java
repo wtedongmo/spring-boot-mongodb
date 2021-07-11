@@ -1,13 +1,11 @@
-package guru.springframework.converters;
+package com.twb.converters;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.domain.Product;
+import com.twb.commands.ProductForm;
+import com.twb.domain.Product;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 1/10/17.
- */
+
 @Component
 public class ProductToProductForm implements Converter<Product, ProductForm> {
     @Override
